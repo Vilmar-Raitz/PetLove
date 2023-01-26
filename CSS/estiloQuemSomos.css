@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Inicio do cabeçalho*/
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    padding: 15px;
+}
+
+.Marca,
+.Midias {
+    width: 25%;
+}
+
+.Menu {
+    width: 50%;
+}
+
+.Menu nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding-right: 100px;
+    font-size: 20px;
+    position: relative;
+}
+
+.Menu nav a ::after {
+    content: " ";
+    width: 30px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #9932CC);
+    position: absolute;
+    top: 25px;
+    left: 0;
+
+}
+
+.Midias button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/*Fim do cabeçalho*/
+
+/*Inicio do rodapé*/
+footer {
+    width: 100%;
+    min-height: 250px;
+    background-color: black;
+    display: flex;
+}
+
+footer .box {
+    width: 320px;
+    min-height: 150px;
+    padding: 20px;
+}
+
+footer.box:nth-child(4) {
+    width: 400px;
+}
+
+.box h2 {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.box ul li {
+    margin: 10px 0px;
+    list-style: none;
+}
+
+.box ul li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.box ul li a:hover {
+    color: #ddd;
+}
+
+.box p {
+    color: #ddd;
+    text-align: justify;
+}
+
+/*Fim do rodapé*/
+
+.texto{
+    padding-left: 50px;
+}

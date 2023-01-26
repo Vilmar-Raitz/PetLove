@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2? family= Yanone+Kaffeesatz & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Yanone Kaffeesatz';
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+h1{
+    color: #000;
+    font: 300;
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+}
+h1::after{
+    content: "";
+    position:absolute;
+    width: 200px;
+    height: 2px;
+    background-color: rgb(93, 37, 93);
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.sliders{
+display: flex;
+}
+.sliders .card{
+    background-color: #f4d9f4;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    -webkit-box-shadow: 4px 4px 5px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px -5px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 5px -5px rgba(0,0,0,0.75);
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sliders .card .product{
+   width: 100%;
+   object-fit: cover;
+}
+.sliders .card img{
+    object-fit: cover;
+ }
+ 
+.sliders .card .title{
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0.5rem 0;
+}
+.sliders .card .rating{
+    color: #ffc002;
+}
+.sliders .card .price{
+    display: flex;
+    gap: 10px;
+    margin: 0.5rem 0;
+}
+.sliders .card .pricepromo{
+    display: flex;
+    gap: 10px;
+    margin: 0.5rem 0;
+}
+
+.sliders .card .pricepromo h5:first-child{
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #d0d2d6;
+}
+.sliders .card .price h5:last-child{
+    font-weight: 600;
+    color: #000;
+}
+.sliders .card a.button{
+    border: 1px solid #7e187b;
+    border-radius: 30px;
+    color: #0c1104;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.sliders .card a.button:hover{
+    background-color:  #4B0082;
+    color: white;
+}
